@@ -12,7 +12,7 @@ const Nav = () => {
 
     return (
         <nav>
-            <a href='/' onClick={e => {
+            <a href='/#' onClick={e => {
                 scrollTop(e);
             }}>HOME</a>
             <a href='#about-me'>ABOUT</a>

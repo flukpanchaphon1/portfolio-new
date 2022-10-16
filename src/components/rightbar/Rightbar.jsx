@@ -16,7 +16,7 @@ const Rightbar = ({ className }) => {
 
   return (
     <div id='rightbar' className={className}>
-      <a href='/' onClick={e => {
+      <a href='/#' onClick={e => {
         scrollTop(e);
         handleClick();
       }}>HOME</a>
