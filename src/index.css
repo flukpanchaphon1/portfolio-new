@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #5214ff;
+  --blk-color: #1a1b26;
+}
+* {
+  font-family: "Figtree", "Noto Sans Thai", "Kanit", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: var(--blk-color);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  margin: 0;
+  background-color: var(--blk-color);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Elems */
+a {
+  text-decoration: none;
+}
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: var(--y-padding) var(--x-padding);
+  overflow: hidden;
+}
+section.f-width {
+  max-width: 100%;
+  padding: 0;
+}
+section.no-padding {
+  padding: 0;
+}
+
+/* my class Style */
+.title {
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+
+  margin-top: 1.2rem;
+
+  transform: translatey(40px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.title.show {
+  transform: translatey(0);
+  opacity: 1;
+}
+
+.f-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-text {
+  pointer-events: none;
+  user-select: none;
+  font-size: 5rem;
+  font-weight: 900;
+  opacity: 0.2;
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}

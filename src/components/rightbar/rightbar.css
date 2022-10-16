@@ -1,0 +1,59 @@
+#rightbar {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+  
+    position: fixed;
+    top: 0;
+    right: -120%;
+  
+    border-radius: 0;
+    background-color: var(--blk-color);
+    transition: all .8s ease;
+  
+    user-select: none;
+    overflow: hidden;
+    z-index: 101;
+  }
+  #rightbar a {
+    font-family: sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    -webkit-text-stroke: 1px ghostwhite;
+    color: transparent;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 1em;
+    transition: color 300ms ease-out;
+    letter-spacing: 2px;
+  }
+  #rightbar a:hover {
+    color: var(--primary-color);
+    -webkit-text-stroke: 1px  var(--primary-color);
+    transition: color 300ms ease;
+  }
+  
+  #rightbar.actived{
+    border-radius: 0;
+    right: 0;
+    animation: sidebar .7s linear 300ms alternate both;
+  }
+  
+  @keyframes sidebar {
+    0%{  border-radius: 50% 0 0 50%;}
+    15%{  border-radius: 50% 0 0 50%;}
+    45%{  border-radius: 0;}
+    100%{  border-radius: 0;}
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    #rightbar a {
+      font-size: 2.2rem;
+    }
+  }

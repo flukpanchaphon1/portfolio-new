@@ -1,0 +1,15 @@
+footer {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    border-top: 1px solid #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    user-select: none;
+  }
+  footer a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+  }

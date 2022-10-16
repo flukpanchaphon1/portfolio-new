@@ -1,0 +1,125 @@
+#about-me {
+  background-color: white;
+  padding: 2.5rem 0 4.2rem 0;
+}
+.container-about-desc {
+  position: relative;
+}
+
+#about-me .title {
+  font-weight: 900;
+  color: black;
+  transform: translatey(40px);
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  margin-bottom: 1.2rem;
+}
+#about-me .title.show {
+  transform: translatey(0);
+  opacity: 1;
+}
+
+.desc-about-me {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: var(--primary-color);
+  color: white;
+
+  max-width: 400px;
+  width: calc(50vw - 100px);
+
+  padding: 30px 50px;
+  z-index: 1;
+  transition:  all .5s ease-out;
+  z-index: 2;
+}
+.about-bg-textd {
+  font-size: min(6vw, 5rem);
+  position: absolute;
+  left: 50vw;
+  bottom: 25%;
+  color: black;
+  transition: left .5s ease;
+}
+
+.img-profile {
+  position: relative;
+  max-width: fit-content;
+  margin: 0 auto;
+  z-index: 1;
+}
+.img-profile img {
+  width: 100%;
+  max-width: 400px;
+}
+.img-profile button {
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+
+  background-color: var(--primary-color);
+  box-shadow: 0 3px 20px -8px var(--primary-color);
+
+  transform: translateX(60%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.img-profile button:hover {
+  color: black;
+  font-weight: 700;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px -5px var(--primary-color);
+  transform: translateX(60%) scale(1.1);
+}
+#glasses{
+  width: 50px;
+  pointer-events: none;
+  position: fixed;
+  transform: translate(-50%, -50%) rotate(-12deg);
+  z-index: 1;
+}
+#my-img-profile{
+  cursor: none;
+}
+
+@media screen and (max-width: 767px) {
+  #about-me {
+    margin-top: 0;
+  }
+  #about-me .title{
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 1rem;
+  }
+  .desc-about-me {
+    position: relative;
+    transform: translateY(0);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1.5rem 1.2rem;
+  }
+  .img-profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .img-profile button {
+    margin-top: 1.2rem;
+    position: relative;
+    transform: translateX(0);
+  }
+  .about-bg-textd{
+    display: none;
+  }
+}
