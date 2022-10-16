@@ -3,7 +3,6 @@ import './recentProjects.css'
 import { recentWorks } from '../../data/recentWork'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 import { AiOutlineSearch } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
 
 const RecentProjects = ({ allwork }) => {
 
@@ -172,7 +171,7 @@ const RecentProjects = ({ allwork }) => {
           )
           : ''}
       </div>
-      {recentWork.length > 0 ? (<Link className='see-more' to='/works'>View All</Link>) : ''}
+      {recentWork.length > 0 ? (<button className='see-more' to='/works'>View All</button>) : ''}
     </div>
   )
 }
