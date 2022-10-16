@@ -2,7 +2,8 @@ import './rightbar.css'
 
 const Rightbar = ({ className }) => {
 
-  const scrollTop = () => {
+  const scrollTop = (e) => {
+    e.preventDefault();
     window.scrollTo({
       top: 0,
       left: 0,
@@ -16,7 +17,7 @@ const Rightbar = ({ className }) => {
 
   return (
     <div id='rightbar' className={className}>
-      <a href='/#' onClick={e => {
+      <a href='/' onClick={e => {
         scrollTop(e);
         handleClick();
       }}>HOME</a>
