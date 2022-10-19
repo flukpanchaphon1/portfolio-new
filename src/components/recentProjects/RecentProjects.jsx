@@ -171,7 +171,7 @@ const RecentProjects = ({ allwork }) => {
           )
           : ''}
       </div>
-      {recentWork.length > 0 ? (<button className='see-more' to='/works'>View All</button>) : ''}
+      {recentWork.length > 0 ? (<button className='see-more' to='/works' style={{display: 'none'}}>View All</button>) : ''}
     </div>
   )
 }

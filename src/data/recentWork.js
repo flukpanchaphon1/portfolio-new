@@ -71,7 +71,15 @@ export const recentWorks = [
         cate: 'WordPress',
         tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
     },
-    
+    {
+        id: 8,
+        src: './assets/works/previews/mini-social-app.webp',
+        link: '#',
+        url: '#',
+        name: 'Mini Social App',
+        cate: 'MyProjects',
+        tag: ['ReactJS', 'CSS', 'NodeJS', 'MongoDB', 'ExpressJS']
+    },
 ]
 
 
