@@ -62,7 +62,7 @@ const RecentProjects = ({ allwork }) => {
     setCurrentCountItem(0);
   }
   const ourProjectWorks = () => {
-    setRecentWork(recentWorks.filter(c => (c.cate === 'OurProject')))
+    setRecentWork(recentWorks.filter(c => (c.cate === 'MyProjects')))
     setPositionCarousel(0);
     setCurrentCountItem(0);
   }
