@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import './recentProjects.css'
 import { recentWorks } from '../../data/recentWork'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
@@ -136,6 +136,27 @@ const RecentProjects = ({ allwork }) => {
   }
 
 
+  const ListWorks = () => {
+    return (
+      recentWork.map(worklist => (
+        <a key={worklist.id} href={worklist.link} target="_blank" rel="noopener noreferrer" className="work-list" style={{ width: `${workContentSize}px` }}>
+          <div className="overlayWork">
+            <AiOutlineSearch style={{ color: 'white', fontSize: '1.2rem' }} />
+            <p>VISIT WEBSITE</p>
+          </div>
+          <span className="tag">{worklist.cate}</span>
+          <img src={worklist.src} alt="" />
+        </a>
+      ))
+    )
+  }
+
+  useEffect(() => {
+    <ListWorks />
+  }, [recentWork])
+
+
+
   return (
     <div id='recent-projrcts'>
       {allwork ? (<hr className='hrRecentWork' style={{ padding: '20px', border: 'none' }} />) : ''}
@@ -151,16 +172,7 @@ const RecentProjects = ({ allwork }) => {
       <div className="container-work" ref={refContainerWork}>
         <div className="progress-bar" style={{ width: `${currentCountItem / maxClick * 100}%` }}></div>
         <div className="warp-work" style={{ transform: `translateX(${positionCarousel}px)` }}>
-          {recentWork.map(worklist => (
-            <a key={worklist.id} href={worklist.link} target="_blank" rel="noopener noreferrer" className="work-list" style={{ width: `${workContentSize}px` }}>
-              <div className="overlayWork">
-                <AiOutlineSearch style={{ color: 'white', fontSize: '1.2rem' }} />
-                <p>VISIT WEBSITE</p>
-              </div>
-              <span className="tag">{worklist.cate}</span>
-              <img src={worklist.src} alt="" />
-            </a>
-          ))}
+          <ListWorks />
         </div>
         {recentWork.length > 4
           ? (
@@ -171,7 +183,7 @@ const RecentProjects = ({ allwork }) => {
           )
           : ''}
       </div>
-      {recentWork.length > 0 ? (<button className='see-more' to='/works' style={{display: 'none'}}>View All</button>) : ''}
+      {recentWork.length > 0 ? (<button className='see-more' to='/works' style={{ display: 'none' }}>View All</button>) : ''}
     </div>
   )
 }
