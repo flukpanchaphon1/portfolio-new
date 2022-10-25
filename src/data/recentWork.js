@@ -58,8 +58,8 @@ export const recentWorks = [
         src: './assets/works/previews/vanilla-code.webp',
         link: 'https://vanilla-code.web.app',
         url: 'wwww.vanilla-code.web.app',
-        name: 'picnikmarket',
-        cate: 'WordPress',
+        name: 'vanilla-code',
+        cate: 'MyProjects',
         tag: ['CSS', 'HTML', 'JavaScript']
     },
     {
