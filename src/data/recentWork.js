@@ -1,51 +1,6 @@
 export const recentWorks = [
     {
         id: 1,
-        src: './assets/works/previews/minnytaxi.webp',
-        link: 'https://minnytaxi.com',
-        url: 'www.minnytaxi.com',
-        name: 'minnytaxi',
-        cate: 'WordPress',
-        tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
-    },
-    {
-        id: 2,
-        src: './assets/works/previews/ขออย.webp',
-        link: 'https://www.ขออย.com',
-        url: 'www.ขออย.com',
-        name: 'ขออย',
-        cate: 'WordPress',
-        tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
-    },
-    {
-        id: 3,
-        src: './assets/works/previews/greenenviengineering.webp',
-        link: 'https://greenenviengineering.com',
-        url: 'www.greenenviengineering.com',
-        name: 'greenenviengineering',
-        cate: 'WordPress',
-        tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
-    },
-    {
-        id: 4,
-        src: './assets/works/previews/spkeducation.webp',
-        link: 'https://spkeducation.co.th',
-        url: 'www.spkeducation.co.th',
-        name: 'spkeducation',
-        cate: 'WordPress',
-        tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
-    },
-    {
-        id: 5,
-        src: './assets/works/previews/taxipattaya.webp',
-        link: 'https://taxipattaya.info',
-        url: 'www.taxipattaya.info',
-        name: 'taxipattaya',
-        cate: 'WordPress',
-        tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
-    },
-    {
-        id: 6,
         src: './assets/works/previews/polluxdesign.webp',
         link: 'https://polluxdesign.co.th',
         url: 'www.polluxdesign.co.th',
@@ -54,7 +9,7 @@ export const recentWorks = [
         tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
     },
     {
-        id: 7,
+        id: 2,
         src: './assets/works/previews/vanilla-code.webp',
         link: 'https://vanilla-code.web.app',
         url: 'wwww.vanilla-code.web.app',
@@ -63,7 +18,7 @@ export const recentWorks = [
         tag: ['CSS', 'HTML', 'JavaScript']
     },
     {
-        id: 8,
+        id: 3,
         src: './assets/works/previews/ngsolarplus.webp',
         link: 'https://www.ngsolarplus.com',
         url: 'www.ngsolarplus.com',
@@ -72,7 +27,7 @@ export const recentWorks = [
         tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
     },
     {
-        id: 9,
+        id: 4,
         src: './assets/works/previews/mini-social-app.webp',
         link: '#',
         url: '#',
@@ -81,11 +36,56 @@ export const recentWorks = [
         tag: ['ReactJS', 'CSS', 'NodeJS', 'MongoDB', 'ExpressJS']
     },
     {
-        id: 10,
+        id: 5,
+        src: './assets/works/previews/minnytaxi.webp',
+        link: 'https://minnytaxi.com',
+        url: 'www.minnytaxi.com',
+        name: 'minnytaxi',
+        cate: 'WordPress',
+        tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
+    },
+    {
+        id: 6,
         src: './assets/works/previews/sirithornfurniture.webp',
         link: 'https://www.sirithornfurniture.com',
         url: 'www.sirithornfurniture.com',
         name: 'sirithornfurniture',
+        cate: 'WordPress',
+        tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
+    },
+    {
+        id: 7,
+        src: './assets/works/previews/greenenviengineering.webp',
+        link: 'https://greenenviengineering.com',
+        url: 'www.greenenviengineering.com',
+        name: 'greenenviengineering',
+        cate: 'WordPress',
+        tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
+    },
+    {
+        id: 8,
+        src: './assets/works/previews/spkeducation.webp',
+        link: 'https://spkeducation.co.th',
+        url: 'www.spkeducation.co.th',
+        name: 'spkeducation',
+        cate: 'WordPress',
+        tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
+    },
+    {
+        id: 9,
+        src: './assets/works/previews/taxipattaya.webp',
+        link: 'https://taxipattaya.info',
+        url: 'www.taxipattaya.info',
+        name: 'taxipattaya',
+        cate: 'WordPress',
+        tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
+    },
+    {
+        id: 10,
+        src: './assets/works/previews/ขออย.webp',
+        link: 'https://www.ขออย.com',
+        url: 'www.ขออย.com',
+        name: 'ขออย',
         cate: 'WordPress',
         tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
     },
@@ -136,10 +136,10 @@ export const recentWorks = [
     },
     {
         id: 16,
-        src: './assets/works/previews/Minori.webp',
-        link: 'https://www.Minori.in.th',
-        url: 'www.Minori.in.th',
-        name: 'Minori',
+        src: './assets/works/previews/minori.webp',
+        link: 'https://www.minori.in.th',
+        url: 'www.minori.in.th',
+        name: 'minori',
         cate: 'WordPress',
         tag: ['CMS', 'WORDPRESS', 'PHP', 'CSS', 'HTML', 'JavaScript']
     },
